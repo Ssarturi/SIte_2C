@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, skyblue, rgb(74, 134, 224), rgb(197, 83, 197))
+}

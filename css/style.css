@@ -48,10 +48,18 @@ main{
     flex: 1;
 
     display: flex;
+    flex-direction: column;
+
     justify-content: center;
     align-items: center;
 
-    padding: 20px;
+    gap: 20px;
+
+    padding: 30px;
+}
+
+main h1{
+    text-align: center;
 }
 
 #container{
@@ -114,4 +122,74 @@ footer{
     text-align: center;
     padding: 15px;
     background-color: #000;
+}
+
+/* ========================= */
+/* Página de Informações */
+/* ========================= */
+
+.mapa{
+    width: 100%;
+    max-width: 1000px;
+
+    background-color: white;
+    color: black;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.mapa h2{
+    margin-bottom: 20px;
+}
+
+.mapa2{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 30px;
+}
+
+.jogo{
+    display: flex;
+    justify-content: center;
+}
+
+.mapa iframe,
+.jogo iframe{
+    width: 100%;
+    max-width: 800px;
+
+    border-radius: 10px;
+}
+
+/* ========================= */
+/* Responsividade */
+/* ========================= */
+
+@media (max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .mapa{
+        padding: 15px;
+    }
+
+    .mapa iframe,
+    .jogo iframe{
+        height: 300px;
+    }
+
+    #container{
+        width: 95%;
+    }
 }

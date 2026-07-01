@@ -4,18 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../img/faviIcon.png" type="image/x-icon">
-    <title>Document</title>
+    <link rel="shortcut icon" href="../img/faviIcon.png" type="image/png">
+    <script src="../js/script.js" defer></script>
+    <title>Programas</title>
 </head>
+
 <body>
+
     <header>
         <nav>
             <a href="../index.html">Home</a>
             <a href="programas.html">Programas</a>
         </nav>
     </header>
+
     <main>
-        <h1>Meus programas favoritos</h1>
+        <section id="container">
+
+            <h1>Meus Programas</h1>
+
+            <label for="num1">
+                Digite o primeiro número
+            </label>
+
+            <input
+                type="number"
+                id="num1"
+                placeholder="Digite aqui">
+
+            <label for="num2">
+                Digite o segundo número
+            </label>
+
+            <input
+                type="number"
+                id="num2"
+                placeholder="Digite aqui">
+
+            <button onclick="calcularSoma()">
+                Calcular
+            </button>
+
+            <div id="resposta"></div>
+
+        </section>
     </main>
+
+    <footer>
+        <small>By Sarturi &copy; &trade;</small>
+    </footer>
+
 </body>
 </html>

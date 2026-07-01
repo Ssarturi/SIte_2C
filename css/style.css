@@ -5,10 +5,113 @@
 }
 
 body{
-    background-color: rgba(0, 0, 0, 0.801);
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #1e1e1e,
+        #111111
+    );
+
     color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-a{
+header{
+    background-color: #000;
+    padding: 15px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a{
+    text-decoration: none;
     color: white;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #4da6ff;
+}
+
+main{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+#container{
+    width: 100%;
+    max-width: 450px;
+
+    background-color: white;
+    color: black;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+input{
+    padding: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+button{
+    padding: 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #0077ff;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #005edb;
+}
+
+#resposta{
+    font-weight: bold;
+    color: #0077ff;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    padding: 15px;
+    background-color: #000;
 }
